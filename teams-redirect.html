@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting to Teams Chat</title>
+</head>
+<body>
+    <h1>Redirecting you to the Teams chat...</h1>
+    <p>If you are not redirected automatically, <a href="https://teams.microsoft.com">click here to open Teams</a>.</p>
+
+    <script>
+        // Step 1: First, redirect the user to Microsoft Teams to ensure they are signed in
+        window.location.href = "https://teams.microsoft.com";  // This will ensure they are signed in
+
+        // Step 2: After authentication, redirect the user to the specific Teams chat
+        setTimeout(() => {
+            // Replace with the correct Teams deep link format for your chat
+            window.location.href = "https://teams.microsoft.com/l/chat/0/0?users=workdaystudent@fairfield.edu&tenantId=14b1677f-3a8b-4ca5-b3ce-50d76ab2e4b9";
+        }, 3000);  // Wait for 3 seconds before redirecting to the chat
+    </script>
+</body>
+</html>
